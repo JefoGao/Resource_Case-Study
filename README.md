@@ -120,3 +120,48 @@ Python and R are popular programming languages for data analysis and machine lea
 4. **glmnet**: Offers tools for fitting generalized linear models via penalized maximum likelihood.
 
 When discussing your experience and comfort level with Python and R, be prepared to mention specific libraries and tools you've used, as well as any projects or applications you've developed. Also, be ready to compare and contrast the two languages, discussing their strengths, weaknesses, and use cases.
+
+# :herb: 4 Tabular Data Structures
+
+Tabular data structures are row-column representations of data where each row represents an observation or record, and each column represents a variable or attribute. Understanding tabular data structures is crucial for efficient data manipulation and analysis.
+
+## :apple: 4.1 Key Concepts
+
+1. **Rows**: Each row in a tabular data structure represents a single observation or record.
+2. **Columns**: Each column in a tabular data structure represents a specific attribute or variable associated with the observations.
+3. **Indices**: Rows and columns can be indexed to facilitate efficient data manipulation and retrieval.
+
+## :apple: 4.2 Data Manipulation Operations
+
+1. **Selection**: Extracting specific rows, columns, or cells from a dataset.
+2. **Filtering**: Selecting rows based on specific conditions or criteria.
+3. **Sorting**: Rearranging rows in a dataset based on the values of one or more columns.
+4. **Aggregation**: Summarizing data by grouping it based on one or more categorical columns and applying an aggregation function (e.g., sum, mean, count) to the remaining columns.
+5. **Joining**: Combining two or more datasets based on shared key columns.
+6. **Reshaping**: Changing the structure of a dataset by pivoting, melting, or stacking.
+
+## :apple: 4.3 Popular Libraries for Tabular Data Manipulation
+
+### :bread: 4.3.1 Python
+
+1. **Pandas**: A powerful library for data manipulation and analysis, providing DataFrame and Series data structures for handling tabular data.
+
+   - Selection: `df['column_name']`, `df.loc[]`, `df.iloc[]`
+   - Filtering: `df[df['column_name'] > value]`
+   - Sorting: `df.sort_values(by='column_name')`
+   - Aggregation: `df.groupby('column_name').agg({'other_column': 'sum'})`
+   - Joining: `pd.merge(df1, df2, on='key_column')`
+   - Reshaping: `df.pivot()`, `df.melt()`
+
+### :bread: 4.3.2 R
+
+1. **dplyr**: A library for data manipulation, providing tools for working with tabular data.
+
+   - Selection: `select(df, column_name)`
+   - Filtering: `filter(df, column_name > value)`
+   - Sorting: `arrange(df, column_name)`
+   - Aggregation: `summarise(group_by(df, column_name), sum(other_column))`
+   - Joining: `inner_join(df1, df2, by = 'key_column')`
+   - Reshaping: `spread()`, `gather()`
+
+When discussing your understanding of tabular data structures, be prepared to explain key concepts, data manipulation operations, and any experience you have using relevant libraries, such as pandas in Python or dplyr in R.
