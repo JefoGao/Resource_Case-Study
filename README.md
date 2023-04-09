@@ -10,7 +10,7 @@ Generalised Linear Models (GLMs) are an extension of the traditional linear regr
 
 The general form of a GLM can be expressed as:
 
-$g(E(Y)) = X\beta$
+$$g(E(Y)) = X\beta$$
 
 Where $g$ is the link function and $E(Y)$ is the expected value of the response variable.
 
@@ -26,7 +26,7 @@ Gradient Boosted Machines (GBMs) are an ensemble learning method that combines t
 
 The output of a GBM can be expressed as:
 
-$f(x) = \sum_{i=1}^{M} \gamma_m h_m(x)$
+$$f(x) = \sum_{i=1}^{M} \gamma_m h_m(x)$$
 
 Where $M$ is the number of trees, $\gamma_m$ are the learning rates, and $h_m(x)$ are the base learners (decision trees).
 
