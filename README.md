@@ -44,3 +44,41 @@ However, GBMs can be prone to overfitting, especially when the number of trees i
 2. **Distribution Assumption**: GLMs assume the response variable follows a distribution from the exponential family, while GBMs make no such assumption.
 3. **Non-linearities**: GLMs handle non-linear relationships through the link function, while GBMs can capture non-linear relationships by combining weak learners.
 4. **Predictive Accuracy**: GBMs often have better predictive accuracy than GLMs, but can be prone to overfitting.
+
+# :herb: 2 Application of Generalised Linear Models (GLMs) and Gradient Boosted Machines (GBMs)
+
+GLMs and GBMs have various real-world applications in different industries, such as finance, insurance, marketing, and healthcare.
+
+## :apple: 2.1 Applications of Generalised Linear Models (GLMs)
+
+1. **Logistic Regression**: A type of GLM used for binary classification problems, where the response variable follows a binomial distribution, and the link function is the logit function.
+
+   - Examples: Predicting customer churn, fraud detection, and medical diagnosis.
+
+2. **Poisson Regression**: A type of GLM used for count data, where the response variable follows a Poisson distribution, and the link function is the log function.
+
+   - Examples: Predicting the number of insurance claims, forecasting the number of support tickets, and modeling the number of product defects.
+
+3. **Ordinal Regression**: A type of GLM used for ordinal response variables, where the link function is the cumulative logit, probit, or complementary log-log function.
+
+   - Examples: Predicting customer satisfaction levels, credit rating, and survey responses.
+
+## :apple: 2.2 Applications of Gradient Boosted Machines (GBMs)
+
+1. **Anomaly Detection**: GBMs can be used to identify unusual patterns or outliers in data, as they can model complex interactions and capture non-linear relationships.
+
+   - Examples: Detecting credit card fraud, network intrusion, and manufacturing defects.
+
+2. **Predictive Modeling**: GBMs are useful for various prediction tasks, including regression, classification, and ranking problems.
+
+   - Examples: Predicting customer lifetime value, click-through rates, and movie recommendations.
+
+3. **Feature Selection**: GBMs can identify important features for prediction by calculating feature importances, which can help in dimensionality reduction and model interpretation.
+
+   - Examples: Identifying key drivers of customer churn, sales, and disease risk factors.
+
+4. **Natural Language Processing**: GBMs can be used for various NLP tasks, such as text classification, sentiment analysis, and topic modeling.
+
+   - Examples: Classifying news articles, analyzing product reviews, and identifying trending topics on social media.
+
+Both GLMs and GBMs are powerful and flexible tools that can be applied to a wide range of problems. However, it's essential to understand their assumptions, strengths, and limitations to select the appropriate algorithm for a specific task.
