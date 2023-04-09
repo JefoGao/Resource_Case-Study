@@ -82,3 +82,41 @@ GLMs and GBMs have various real-world applications in different industries, such
    - Examples: Classifying news articles, analyzing product reviews, and identifying trending topics on social media.
 
 Both GLMs and GBMs are powerful and flexible tools that can be applied to a wide range of problems. However, it's essential to understand their assumptions, strengths, and limitations to select the appropriate algorithm for a specific task.
+
+# :herb: 3 Python and R: Experience and Comfort Level
+
+Python and R are popular programming languages for data analysis and machine learning. Both languages have extensive libraries and tools to support various data analysis tasks.
+
+## :apple: 3.1 Python
+
+### :bread: 3.1.1 Core Libraries
+
+1. **NumPy**: Provides support for numerical operations and working with arrays.
+2. **Pandas**: Offers data manipulation and analysis tools, such as DataFrame and Series.
+3. **Matplotlib**: A plotting library for creating static, animated, and interactive visualizations.
+4. **Seaborn**: A statistical data visualization library based on Matplotlib.
+
+### :bread: 3.1.2 Machine Learning Libraries
+
+1. **Scikit-learn**: A library for machine learning, featuring various algorithms, preprocessing tools, and model evaluation techniques.
+2. **TensorFlow**: An open-source library for machine learning and deep learning, developed by Google.
+3. **Keras**: A high-level neural networks API, running on top of TensorFlow or other deep learning frameworks.
+4. **PyTorch**: A deep learning framework developed by Facebook, offering tensor computations and deep neural networks.
+
+## :apple: 3.2 R
+
+### :bread: 3.2.1 Core Packages
+
+1. **dplyr**: Provides tools for data manipulation, such as filtering, sorting, and aggregating.
+2. **ggplot2**: A popular visualization package based on the Grammar of Graphics.
+3. **tidyr**: Offers tools for cleaning and reshaping data.
+4. **readr**: Facilitates reading and writing data from various file formats.
+
+### :bread: 3.2.2 Machine Learning Packages
+
+1. **caret**: A package for classification and regression training, streamlining the model training process.
+2. **randomForest**: Implements the random forest algorithm for classification and regression tasks.
+3. **xgboost**: An optimized and scalable implementation of gradient boosting, designed for speed and performance.
+4. **glmnet**: Offers tools for fitting generalized linear models via penalized maximum likelihood.
+
+When discussing your experience and comfort level with Python and R, be prepared to mention specific libraries and tools you've used, as well as any projects or applications you've developed. Also, be ready to compare and contrast the two languages, discussing their strengths, weaknesses, and use cases.
