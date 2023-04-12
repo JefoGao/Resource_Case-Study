@@ -96,7 +96,7 @@ Imputation of missing data involves filling in the missing values using a method
 - When there are too many missing values or missing values are clustered in a particular subset of the dataset.
 - When the imputation introduces a significant amount of bias or affects the distribution of the data.
 
-### ***:blub: solution***
+#### ***:bulb: solution***
 *Generalized Linear Models (GLM) can be used for regression imputation. GLM is an extension of linear regression that can handle non-normal error distributions and non-linear relationships between variables. It allows the use of different types of response variables, such as binary, count, or continuous variables, and can be used for both simple and multiple regression imputation. However, GLM requires careful selection of appropriate link functions and distributions to model the relationship between the missing variable and the predictor variables.*
 
 ### 2.3 Handling Missing Data based on Data Type and Distribution
