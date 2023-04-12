@@ -1,6 +1,6 @@
 # Analyze Dataset
 
-## 1 Understanding the Distribution of Variables in a Dataset
+## 1 Prerequisite: Understand the Distribution of Variables in a Dataset
 
 One of the first steps in data analysis is to understand the distribution of variables in the dataset. This involves identifying the data types of the variables, as well as the shape, spread, and central tendency of their distributions. By doing so, we can gain insights into the underlying patterns and relationships in the data, and make informed decisions about how to preprocess, transform, or model the data.
 
@@ -46,23 +46,34 @@ The central tendency and spread of a distribution are important descriptive stat
 - **Standard deviation**: This is a measure of the spread or variability of the data around the mean. It is sensitive to outliers and can be biased by non-normal distributions.
 - **Range**: This is the difference between the maximum and minimum values in the data. It can be useful for detecting outliers or unusual data points.
 
-### 1.4 Conclusion
+## 2 Handle Missing Data
+- Missing data refers to observations or values that are not present in the dataset.
+- Missing data can occur for various reasons such as non-response, data entry errors, or faulty measurements.
 
-In summary, describing the distribution of variables in a dataset is an important first step in data analysis. It involves understanding the data types, distribution shapes, and measures of central tendency and spread of the variables. By doing so, we can gain insights into the underlying patterns and relationships in the data, and make informed decisions about how to preprocess, transform, or model the data.
+### 2.1 Detection of Missing Data
+- Visual inspection of the dataset to identify missing data through heatmaps, bar plots, or line graphs.
+- Using built-in functions in python libraries like pandas.isnull() or numpy.isnan().
 
-### Nomial or ordinal scales
-- Nominal scale: A variable measured on a nominal scale is one where each observation is assigned a label, such as a name, category, or group. There is no inherent order or ranking to these labels.
-- Ordinal scale: A variable measured on an ordinal scale is one where each observation is assigned a label that has a natural order or ranking. However, the differences between the categories are not equal.
+### 2.2 Handling Missing Data
+- Removal of missing data:
+    - Listwise deletion (removing entire rows with missing values).
+    - Pairwise deletion (removing specific column/variable if any missing values exist).
+- Imputation of missing data:
+    - Mean imputation (replacing missing values with the mean of the available data).
+    - Mode imputation (replacing missing values with the mode of the available data).
+    - Median imputation (replacing missing values with the median of the available data).
+    - Regression imputation (replacing missing values with predicted values using regression models).
+    - KNN imputation (replacing missing values with predicted values using KNN algorithm).
+    
+### 2.3 Handling Missing Data based on Data Type and Distribution
+- For nominal or ordinal data with low missing data percentage, removal or mode imputation can be used.
+- For interval or ratio data with low missing data percentage, mean, median or regression imputation can be used.
+- For bimodal or skewed data, median imputation can be used.
+- For a large dataset with a high percentage of missing data, KNN imputation can be used.
+- In some cases, it is necessary to consider the reason why the data is missing and use domain knowledge to impute or remove the missing data.
 
-### Interval or ratio scales
-- Interval scale: A variable measured on an interval scale has equal intervals between adjacent values, but there is no true zero point.
-- Ratio scale: A variable measured on a ratio scale has equal intervals between adjacent values, and there is a true zero point, meaning that a value of zero represents the complete absence of the variable being measured.
-
-### Bimodal
-- A distribution is bimodal if it has two peaks or modes, meaning that there are two values that occur with the highest frequency in the dataset.
 
 
-Can you describe the distribution of one or more variables in the dataset?
 How would you detect and handle missing data in the dataset?
 Can you identify any outliers or anomalies in the dataset? How would you handle them?
 Can you identify any correlations or patterns in the dataset?
