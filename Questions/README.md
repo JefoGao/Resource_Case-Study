@@ -191,6 +191,13 @@ GBMs work by iteratively adding decision trees to the model, with each tree tryi
 GBMs can be used for both regression and classification problems, and are known for their high predictive accuracy and robustness to outliers.
 
 # 5 Interpret the Results
+Interpreting the results is a crucial step in the data analysis process. Here are some important points to keep in mind:
+
+- Look for statistical significance: In many cases, statistical tests are used to determine whether the results are significant. This means that the observed differences or relationships are unlikely to be due to chance. It is important to interpret the p-values and confidence intervals associated with these tests in order to determine whether the results are statistically significant.
+- Consider effect sizes: Even if the results are statistically significant, it is important to consider the size of the effect. Small effect sizes may not be practically significant, while large effect sizes may be of great practical importance.
+- Consider limitations and potential confounding factors: It is important to consider any potential limitations or sources of bias in the analysis. This may include issues such as missing data, confounding variables, or selection bias. It is important to discuss these limitations when presenting the results.
+- Draw conclusions based on the findings: Based on the results of the analysis, draw conclusions about the research questions or hypotheses. It is important to present these conclusions clearly and concisely, and to avoid overstating the results or making conclusions that are not supported by the data.
+- Discuss implications for future research: Finally, it is important to discuss the implications of the results for future research. This may include recommendations for further studies, suggestions for alternative analysis methods, or discussion of potential practical applications of the findings.
 
 # 6 Communicate the results
 
