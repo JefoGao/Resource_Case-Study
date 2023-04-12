@@ -13,7 +13,7 @@ The data types encountered in a dataset can include:
 - **Textual**: These are variables that represent unstructured or free-form text, such as reviews, comments, or tweets. They may require natural language processing (NLP) techniques to analyze.
 - **Temporal**: These are variables that represent dates, times, or durations, such as timestamps, event dates, or time-to-failure. They may require time series analysis techniques to analyze.
 
-#### ***notes***
+#### ***:bulb: notes***
 - *Nominal scale: A variable measured on a nominal scale is one where each observation is assigned a label, such as a name, category, or group. There is no inherent order or ranking to these labels.*
 - *Ordinal scale: A variable measured on an ordinal scale is one where each observation is assigned a label that has a natural order or ranking. However, the differences between the categories are not equal.*
 - *Interval scale: A variable measured on an interval scale has equal intervals between adjacent values, but there is no true zero point.*
@@ -32,6 +32,9 @@ The shape of a distribution refers to the pattern or form that the data takes wh
 - **Skewed**: This is a distribution that is not symmetric, but rather skewed to the left or right. It is characterized by its median and skewness, and can indicate the presence of outliers or a non-normal underlying process.
 - **Bimodal**: This is a distribution that has two distinct peaks or modes. It can indicate the presence of two underlying processes or populations.
 - **Uniform**: This is a distribution that is flat or rectangular, with equal probability across the range of values. It is characterized by its minimum and maximum values, and can indicate a lack of structure or randomness in the data.
+
+#### ***:bulb: notes***
+- *A distribution is bimodal if it has two peaks or modes, meaning that there are two values that occur with the highest frequency in the dataset.*
 
 ### 1.3 Measures of Central Tendency and Spread
 
