@@ -205,7 +205,6 @@ Interpreting the results is a crucial step in the data analysis process. Here ar
 |![image](https://user-images.githubusercontent.com/19381768/231360883-4493bdde-d9da-4bf3-8b7e-2cf4eff5f7f8.png)|
 |Selection Bias|
 
-# 6 Communicate the results
 
 How would you detect and handle missing data in the dataset?
 Can you identify any outliers or anomalies in the dataset? How would you handle them?
