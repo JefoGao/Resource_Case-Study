@@ -199,6 +199,12 @@ Interpreting the results is a crucial step in the data analysis process. Here ar
 - Draw conclusions based on the findings: Based on the results of the analysis, draw conclusions about the research questions or hypotheses. It is important to present these conclusions clearly and concisely, and to avoid overstating the results or making conclusions that are not supported by the data.
 - Discuss implications for future research: Finally, it is important to discuss the implications of the results for future research. This may include recommendations for further studies, suggestions for alternative analysis methods, or discussion of potential practical applications of the findings.
 
+|![image](https://user-images.githubusercontent.com/19381768/231360614-d7b298b4-a305-4b87-881b-6c6e68d97f85.png)|
+|:--:|
+|Confounding Variables|
+|![image](https://user-images.githubusercontent.com/19381768/231360883-4493bdde-d9da-4bf3-8b7e-2cf4eff5f7f8.png)|
+|Selection Bias|
+
 # 6 Communicate the results
 
 How would you detect and handle missing data in the dataset?
