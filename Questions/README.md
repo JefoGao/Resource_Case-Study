@@ -131,6 +131,21 @@ EDA involves using statistical techniques to explore the data and identify patte
 
 Tools such as NumPy, Pandas, and Scikit-learn can be used to perform EDA.
 
+### 3.2.1 Clustering
+- Clustering is a technique used to group similar data points together. It can help identify patterns or groups in the data.
+- Types of clustering: k-means, hierarchical clustering, etc.
+- Example: use k-means clustering to group similar customers together based on their purchasing behavior.
+
+### 3.2.2 Dimensionality reduction
+- Dimensionality reduction is a technique used to reduce the number of variables in the data. It can help simplify the data and make it easier to analyze.
+- Types of dimensionality reduction: principal component analysis (PCA), t-SNE, etc.
+- Example: use PCA to reduce the number of variables in a dataset containing many correlated features.
+
+### 3.3.3 Correlation analysis
+- Correlation analysis is a technique used to identify the strength of the relationship between two variables.
+- Types of correlation analysis: Pearson correlation coefficient, Spearman rank correlation coefficient, etc.
+- Example: calculate the Pearson correlation coefficient between the target variable and each feature to identify potential predictors.
+
 ## 3.3 Data transformation
 
 Before applying machine learning algorithms, it may be necessary to transform the data. Common transformations include:
@@ -144,6 +159,36 @@ Tools such as Scikit-learn and TensorFlow can be used to perform data transforma
 Overall, exploring the data is a crucial step in the data analysis process. It allows us to gain insights into the data and understand the relationships between variables, which can inform the development of machine learning models.
 
 # 4 Perform Statistical Analysis
+
+Statistical analysis is a key step in any data analysis project. It involves selecting and performing appropriate statistical analysis techniques to answer the research questions or hypotheses. Some common statistical analysis techniques include:
+- **Regression analysis**: This is used to model the relationship between one or more independent variables and a dependent variable. One common type of regression analysis is the Generalized Linear Model (GLM), which is used to model the relationship between a dependent variable and a set of independent variables.
+- **Hypothesis testing**: This is used to test a hypothesis or research question using statistical methods. It involves formulating a null hypothesis and an alternative hypothesis, collecting data, and then using statistical methods to determine whether to reject or fail to reject the null hypothesis.
+- **Machine learning algorithms**: These are used to automatically learn patterns and relationships in data, and to make predictions or classifications based on those patterns. One common machine learning algorithm is the Gradient Boosted Machine (GBM), which is a type of decision tree algorithm that builds a model by iteratively adding decision trees to the model.
+
+## 4.1 Regression Analysis and GLMs
+GLMs are a class of regression models that generalize linear regression to accommodate response variables that have error distributions other than the normal distribution. GLMs are widely used in many fields, including biology, social sciences, engineering, and economics.
+
+The general form of a GLM is:
+
+$$g(\mathbb{E}(Y))=\beta_0+\beta_1X_1+\beta_2X_2+\cdots+\beta_pX_p$$
+
+where $\mathbb{E}(Y)$ is the expected value of the response variable, $g(.)$ is the link function, $\beta_0$ is the intercept, $\beta_1, ..., \beta_p$ are the coefficients for the predictor variables $X_1, ..., X_p$, respectively.
+
+The link function is used to link the expected value of the response variable to the linear combination of the predictor variables. Some commonly used link functions include the logit link for binary data, the identity link for continuous data, and the log link for count data.
+
+## 4.2 Hypothesis Testing
+Hypothesis testing is a statistical technique used to determine whether an observed effect is statistically significant or is likely to have occurred by chance. The process of hypothesis testing involves setting up a null hypothesis and an alternative hypothesis, calculating a test statistic, and comparing the test statistic to a critical value to determine whether to reject or fail to reject the null hypothesis.
+
+## 4.3 Machine Learning Algorithms and GBMs
+Machine learning algorithms are a class of algorithms that can be used to build predictive models from data. Machine learning algorithms are widely used in many fields, including finance, healthcare, and marketing.
+
+Some common machine learning algorithms include decision trees, random forests, support vector machines, and neural networks. These algorithms can be used for both regression and classification problems and are known for their high predictive accuracy.
+
+Gradient Boosted Machines (GBMs) are a class of machine learning algorithms that are used for both regression and classification problems. GBMs combine the strengths of decision trees and boosting to create a powerful and flexible modeling approach.
+
+GBMs work by iteratively adding decision trees to the model, with each tree trying to correct the errors of the previous tree. The output of the model is the weighted sum of the outputs of all the trees.
+
+GBMs can be used for both regression and classification problems, and are known for their high predictive accuracy and robustness to outliers.
 
 # 5 Interpret the Results
 
