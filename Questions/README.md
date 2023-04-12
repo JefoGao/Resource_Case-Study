@@ -41,7 +41,7 @@ The shape of a distribution refers to the pattern or form that the data takes wh
 The central tendency and spread of a distribution are important descriptive statistics that summarize the location and variability of the data. Common measures include:
 
 - **Mean**: This is the arithmetic average of the data values. It is sensitive to outliers and can be biased by non-normal distributions.
-- **Median**: This is the middle value of the data when sorted in ascending order. It is more robust to outliers and non-normal distributions than the mean.
+- **Median**: This is the middle value of the data when sorted in ascending order. It is more robust to outliers and non-normal distributions than the mean. (*Too many 0s will affact median, remember to remove*)
 - **Mode**: This is the most common value or values in the data. It can be useful for categorical or discrete variables.
 - **Standard deviation**: This is a measure of the spread or variability of the data around the mean. It is sensitive to outliers and can be biased by non-normal distributions.
 - **Range**: This is the difference between the maximum and minimum values in the data. It can be useful for detecting outliers or unusual data points.
