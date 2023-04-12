@@ -1,4 +1,4 @@
-# 1 Prerequisite: Understand the Distribution of Variables in a Dataset
+# 1 Understand the Data
 
 One of the first steps in data analysis is to understand the distribution of variables in the dataset. This involves identifying the data types of the variables, as well as the shape, spread, and central tendency of their distributions. By doing so, we can gain insights into the underlying patterns and relationships in the data, and make informed decisions about how to preprocess, transform, or model the data.
 
@@ -106,7 +106,13 @@ Imputation of missing data involves filling in the missing values using a method
 - For a large dataset with a high percentage of missing data, KNN imputation can be used.
 - In some cases, it is necessary to consider the reason why the data is missing and use domain knowledge to impute or remove the missing data.
 
+# 3 Explore the Data
 
+# 4 Perform Statistical Analysis
+
+# 5 Interpret the Results
+
+# 6 Communicate the results
 
 How would you detect and handle missing data in the dataset?
 Can you identify any outliers or anomalies in the dataset? How would you handle them?
