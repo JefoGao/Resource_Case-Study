@@ -37,7 +37,7 @@ The dummy dataset contains the following columns:
 
 ---
 
-## Sample Answer for Task 1: Understand data types, distribution, and descriptive statistics (measure of central tendency and spread)
+### Sample Answer for Task 1: Understand data types, distribution, and descriptive statistics (measure of central tendency and spread)
 
 Data types in the dataset are as follows:
 
@@ -66,7 +66,7 @@ Descriptive statistics for numerical columns:
   - Median: 62.3
   - Standard Deviation: 30.2
 
-## Sample Answer for Task 2: Identify outliers and anomalies, propose data cleaning method (handling missing data) for the dataset
+### Sample Answer for Task 2: Identify outliers and anomalies, propose data cleaning method (handling missing data) for the dataset
 
 Upon examining the dataset, we found the following issues:
 
@@ -79,7 +79,7 @@ Upon examining the dataset, we found the following issues:
 
 After applying the proposed data cleaning methods, we will have a clean dataset to proceed with our analysis.
 
-## Sample Answer for Task 3: Perform exploratory data analysis, identify data correlations and patterns, propose data transformation methods
+### Sample Answer for Task 3: Perform exploratory data analysis, identify data correlations and patterns, propose data transformation methods
 
 Upon performing exploratory data analysis, we identified the following patterns and correlations in the dataset:
 
@@ -97,7 +97,7 @@ Data transformation methods that can be used to improve our analysis include:
 - Log transformation for the `Unit_Price` and `Total_Price` columns to reduce the impact of outliers and skewness in the data.
 - Feature scaling (e.g., Min-Max scaling or Standard scaling) for numerical columns to ensure that all features have the same scale, which can improve the performance of our models.
 
-## Sample Answer for Task 4: Conducting statistical data analysis, using GLMs to perform regression analysis, hypothesis testing, and Gradient Boosted Machines to solve regression and classification problems
+### Sample Answer for Task 4: Conducting statistical data analysis, using GLMs to perform regression analysis, hypothesis testing, and Gradient Boosted Machines to solve regression and classification problems
 
 1. GLMs (Generalized Linear Models) can be used to perform regression analysis to predict `Total_Price` based on features such as `Category`, `Quantity`, `Unit_Price`, and `Loyalty_Member`. A Poisson or Gamma regression might be suitable for this task, given the nature of the target variable (`Total_Price`).
 
