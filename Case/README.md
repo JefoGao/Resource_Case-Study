@@ -37,7 +37,7 @@ The dummy dataset contains the following columns:
 
 ---
 
-## Sample Answer for Task 1
+## Sample Answer for Task 1: Understand data types, distribution, and descriptive statistics (measure of central tendency and spread)
 
 Data types in the dataset are as follows:
 
@@ -66,7 +66,7 @@ Descriptive statistics for numerical columns:
   - Median: 62.3
   - Standard Deviation: 30.2
 
-## Sample Answer for Task 2
+## Sample Answer for Task 2: Identify outliers and anomalies, propose data cleaning method (handling missing data) for the dataset
 
 Upon examining the dataset, we found the following issues:
 
@@ -78,3 +78,31 @@ Upon examining the dataset, we found the following issues:
 - Proposed solution: We can treat these records as separate cases and analyze them separately or remove them from the dataset if they are determined to be data entry errors. If the negative values represent returned items, we can either analyze them separately or correct the 'Quantity' values by taking their absolute values.
 
 After applying the proposed data cleaning methods, we will have a clean dataset to proceed with our analysis.
+
+## Sample Answer for Task 3: Perform exploratory data analysis, identify data correlations and patterns, propose data transformation methods
+
+Upon performing exploratory data analysis, we identified the following patterns and correlations in the dataset:
+
+1. Sales vary across product categories, with some categories showing higher sales than others. This information can help the supermarket focus on promoting popular categories or improve the performance of underperforming categories.
+
+2. A positive correlation exists between `Quantity` and `Total_Price`, indicating that higher quantities lead to higher total prices, as expected.
+
+3. A weak negative correlation exists between `Loyalty_Member` and `Total_Price`, suggesting that loyalty members might be spending less on average per transaction than non-members. This could be due to loyalty members taking advantage of discounts and promotions.
+
+4. Sales show a clear seasonality, with higher sales during certain times of the year, such as holidays.
+
+Data transformation methods that can be used to improve our analysis include:
+
+- One-hot encoding for categorical variables like `Category` and `Payment_Method`, allowing us to include these features in our predictive models.
+- Log transformation for the `Unit_Price` and `Total_Price` columns to reduce the impact of outliers and skewness in the data.
+- Feature scaling (e.g., Min-Max scaling or Standard scaling) for numerical columns to ensure that all features have the same scale, which can improve the performance of our models.
+
+## Sample Answer for Task 4: Conducting statistical data analysis, using GLMs to perform regression analysis, hypothesis testing, and Gradient Boosted Machines to solve regression and classification problems
+
+1. GLMs (Generalized Linear Models) can be used to perform regression analysis to predict `Total_Price` based on features such as `Category`, `Quantity`, `Unit_Price`, and `Loyalty_Member`. A Poisson or Gamma regression might be suitable for this task, given the nature of the target variable (`Total_Price`).
+
+2. Hypothesis testing can be performed to identify if there are significant differences in sales across categories, payment methods, or between loyalty members and non-members. For example, we can use ANOVA to test if the average `Total_Price` significantly differs across categories.
+
+3. Gradient Boosted Machines (GBMs) can be used to solve both regression and classification problems. For instance, we can use GBMs to predict `Total_Price` for future transactions (regression) or classify transactions into different customer segments based on their characteristics (classification).
+
+Before using GLMs and GBMs, we will need to preprocess our data by applying the data transformations mentioned in Task 3, such as one-hot encoding, log transformation, and feature scaling.
