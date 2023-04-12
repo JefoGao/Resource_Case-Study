@@ -22,6 +22,15 @@ The shape of a distribution refers to the pattern or form that the data takes wh
 - **Bimodal**: This is a distribution that has two distinct peaks or modes. It can indicate the presence of two underlying processes or populations.
 - **Uniform**: This is a distribution that is flat or rectangular, with equal probability across the range of values. It is characterized by its minimum and maximum values, and can indicate a lack of structure or randomness in the data.
 
+#### ***Nomial or ordinal scales***
+- *Nominal scale: A variable measured on a nominal scale is one where each observation is assigned a label, such as a name, category, or group. There is no inherent order or ranking to these labels.*
+- *Ordinal scale: A variable measured on an ordinal scale is one where each observation is assigned a label that has a natural order or ranking. However, the differences between the categories are not equal.*
+
+#### ***Interval or ratio scales***
+- *Interval scale: A variable measured on an interval scale has equal intervals between adjacent values, but there is no true zero point.*
+- *Ratio scale: A variable measured on a ratio scale has equal intervals between adjacent values, and there is a true zero point, meaning that a value of zero represents the complete absence of the variable being measured.*
+
+
 ### 1.3 Measures of Central Tendency and Spread
 
 The central tendency and spread of a distribution are important descriptive statistics that summarize the location and variability of the data. Common measures include:
@@ -35,6 +44,17 @@ The central tendency and spread of a distribution are important descriptive stat
 ### 1.4 Conclusion
 
 In summary, describing the distribution of variables in a dataset is an important first step in data analysis. It involves understanding the data types, distribution shapes, and measures of central tendency and spread of the variables. By doing so, we can gain insights into the underlying patterns and relationships in the data, and make informed decisions about how to preprocess, transform, or model the data.
+
+### Nomial or ordinal scales
+- Nominal scale: A variable measured on a nominal scale is one where each observation is assigned a label, such as a name, category, or group. There is no inherent order or ranking to these labels.
+- Ordinal scale: A variable measured on an ordinal scale is one where each observation is assigned a label that has a natural order or ranking. However, the differences between the categories are not equal.
+
+### Interval or ratio scales
+- Interval scale: A variable measured on an interval scale has equal intervals between adjacent values, but there is no true zero point.
+- Ratio scale: A variable measured on a ratio scale has equal intervals between adjacent values, and there is a true zero point, meaning that a value of zero represents the complete absence of the variable being measured.
+
+### Bimodal
+- A distribution is bimodal if it has two peaks or modes, meaning that there are two values that occur with the highest frequency in the dataset.
 
 
 Can you describe the distribution of one or more variables in the dataset?
