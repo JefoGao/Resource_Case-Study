@@ -44,15 +44,17 @@ The central tendency and spread of a distribution are important descriptive stat
 - **Standard deviation**: This is a measure of the spread or variability of the data around the mean. It is sensitive to outliers and can be biased by non-normal distributions.
 - **Range**: This is the difference between the maximum and minimum values in the data. It can be useful for detecting outliers or unusual data points.
 
-# 2 Handle Missing Data
+# 2 Data Cleaning
+
+## 2.1 Missing Data
 - Missing data refers to observations or values that are not present in the dataset.
 - Missing data can occur for various reasons such as non-response, data entry errors, or faulty measurements.
 
-## 2.1 Detection of Missing Data
+### 2.1.1 Detection of Missing Data
 - Visual inspection of the dataset to identify missing data through heatmaps, bar plots, or line graphs.
 - Using built-in functions in python libraries like pandas.isnull() or numpy.isnan().
 
-## 2.2 Handling Missing Data
+### 2.1.2 Handling Missing Data
 - Removal of missing data:
     - Listwise deletion (removing entire rows with missing values).
     - Pairwise deletion (removing specific column/variable if any missing values exist).
@@ -63,7 +65,7 @@ The central tendency and spread of a distribution are important descriptive stat
     - Regression imputation (replacing missing values with predicted values using regression models).
     - KNN imputation (replacing missing values with predicted values using KNN algorithm).
 
-## 2.3 Imputation of Missing Data
+## 2.2 Imputation of Missing Data
 
 Imputation of missing data involves filling in the missing values using a method that takes into account the remaining data in the dataset.
 
@@ -71,7 +73,7 @@ Imputation of missing data involves filling in the missing values using a method
 |--|--|
 |<ul><li>Utilizes all the available data.</li><li>Preserves the variability of the data.</li><li>Enables the use of more advanced statistical methods.</li></ul>|<ul><li>May introduce bias if the method used is not appropriate for the dataset.</li><li>Can affect the distribution of the data.</li><li>Can inflate standard errors or confidence intervals.</li></ul>|
 
-### 2.3.1 Imputation Methods Use Case
+### 2.2.1 Imputation Methods Use Case
 
 |Method|Use Case|
 |--|--|
@@ -80,7 +82,7 @@ Imputation of missing data involves filling in the missing values using a method
 |Median Imputation|<ul><li>Replacing missing values with the median of the available data.</li><li>Works well for data with a skewed distribution or outliers.</li></ul>
 |Regression Imputation|<ul><li>Replacing missing values with predicted values using regression models.</li><li>Works well when there is a linear relationship between the missing variable and other variables in the dataset.</li><li>However, regression imputation assumes a linear relationship between the variables and may not work well for non-linear relationships or interactions between variables.</li></ul>|
 
-### 2.3.2 Regression Models
+### 2.2.2 Regression Models
 #### :one: Choose a Model
 - Simple Linear Regression: suitable for one missing variable and one or more predictor variables.
 - Multiple Linear Regression: suitable for more than one missing variable and one or more predictor variables.
@@ -99,14 +101,26 @@ Imputation of missing data involves filling in the missing values using a method
 #### ***:bulb: solution***
 *Generalized Linear Models (GLM) can be used for regression imputation. GLM is an extension of linear regression that can handle non-normal error distributions and non-linear relationships between variables. It allows the use of different types of response variables, such as binary, count, or continuous variables, and can be used for both simple and multiple regression imputation. However, GLM requires careful selection of appropriate link functions and distributions to model the relationship between the missing variable and the predictor variables.*
 
-### 2.3 Handling Missing Data based on Data Type and Distribution
+### 2.2.3 Handling Missing Data based on Data Type and Distribution
 - For nominal or ordinal data with low missing data percentage, removal or mode imputation can be used.
 - For interval or ratio data with low missing data percentage, mean, median or regression imputation can be used.
 - For bimodal or skewed data, median imputation can be used.
 - For a large dataset with a high percentage of missing data, KNN imputation can be used.
 - In some cases, it is necessary to consider the reason why the data is missing and use domain knowledge to impute or remove the missing data.
 
-# 3 Explore the Data
+## 2.3 Identifying Outliers and Anomalies
+Outliers or anomalies are data points that are significantly different from the other data points in the dataset. They can occur due to measurement errors or other sources of variation. Outliers can be identified using the following methods:
+
+- Box plots: A box plot can be used to visualize the distribution of the data and identify any outliers. Outliers are defined as data points that fall outside the whiskers of the box plot.
+- Z-score: A z-score can be used to identify outliers. Data points that have a z-score greater than 3 or less than -3 are considered outliers.
+- Visual inspection: Outliers can be identified by visual inspection of the data.
+
+Once outliers have been identified, there are several ways to handle them:
+
+- Remove them: Outliers can be removed from the dataset if they are the result of measurement errors or other sources of variation.
+- Adjust them: Outliers can be adjusted to be closer to the other data points in the dataset.
+
+# 3 Data Exploration
 
 After cleaning and preprocessing the data, the next step is to explore the data. This involves identifying any patterns or trends in the data and understanding the relationships between variables. 
 
@@ -146,7 +160,17 @@ Tools such as NumPy, Pandas, and Scikit-learn can be used to perform EDA.
 - Types of correlation analysis: Pearson correlation coefficient, Spearman rank correlation coefficient, etc.
 - Example: calculate the Pearson correlation coefficient between the target variable and each feature to identify potential predictors.
 
-## 3.3 Data transformation
+## 3.3 Correlations and Patterns
+
+Correlations and patterns in the dataset can be identified using the following methods:
+
+- Correlation matrix: A correlation matrix can be used to identify correlations between variables in the dataset.
+- Scatter plots: Scatter plots can be used to visualize the relationship between two variables in the dataset.
+- Heat maps: Heat maps can be used to visualize the relationships between multiple variables in the dataset.
+
+Once correlations and patterns have been identified, they can be used to perform predictive modeling or forecasting based on the dataset.
+
+## 3.4 Data transformation
 
 Before applying machine learning algorithms, it may be necessary to transform the data. Common transformations include:
 
@@ -158,7 +182,7 @@ Tools such as Scikit-learn and TensorFlow can be used to perform data transforma
 
 Overall, exploring the data is a crucial step in the data analysis process. It allows us to gain insights into the data and understand the relationships between variables, which can inform the development of machine learning models.
 
-# 4 Perform Statistical Analysis
+# 4 Statistical Data Analysis
 
 Statistical analysis is a key step in any data analysis project. It involves selecting and performing appropriate statistical analysis techniques to answer the research questions or hypotheses. Some common statistical analysis techniques include:
 - **Regression analysis**: This is used to model the relationship between one or more independent variables and a dependent variable. One common type of regression analysis is the Generalized Linear Model (GLM), which is used to model the relationship between a dependent variable and a set of independent variables.
@@ -189,6 +213,16 @@ Gradient Boosted Machines (GBMs) are a class of machine learning algorithms that
 GBMs work by iteratively adding decision trees to the model, with each tree trying to correct the errors of the previous tree. The output of the model is the weighted sum of the outputs of all the trees.
 
 GBMs can be used for both regression and classification problems, and are known for their high predictive accuracy and robustness to outliers.
+
+## 4.4 Predictive Modeling and Forecasting
+
+Predictive modeling and forecasting can be performed using machine learning algorithms such as:
+
+- Linear regression: A linear regression model can be used to predict the value of a dependent variable based on one or more independent variables.
+- Decision trees: Decision trees can be used to predict the value of a dependent variable based on a set of independent variables.
+- Random forests: Random forests can be used to predict the value of a dependent variable based on a set of independent variables.
+
+Before performing predictive modeling or forecasting, it is important to split the dataset into training and testing sets to avoid overfitting the model to the data. Once the model has been trained, it can be used to make predictions on new data.
 
 # 5 Interpret the Results
 Interpreting the results is a crucial step in the data analysis process. Here are some important points to keep in mind:
