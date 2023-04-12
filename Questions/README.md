@@ -239,13 +239,3 @@ Interpreting the results is a crucial step in the data analysis process. Here ar
 |![image](https://user-images.githubusercontent.com/19381768/231360883-4493bdde-d9da-4bf3-8b7e-2cf4eff5f7f8.png)|
 |Selection Bias|
 
-
-How would you detect and handle missing data in the dataset?
-Can you identify any outliers or anomalies in the dataset? How would you handle them?
-Can you identify any correlations or patterns in the dataset?
-Can you perform any predictive modeling or forecasting based on the dataset?
-Can you calculate any summary statistics, such as mean, median, or standard deviation, for specific variables in the dataset?
-Can you perform any data transformations, such as normalization or scaling, on the dataset?
-Can you create any visualizations or graphs to better understand the dataset?
-How would you approach feature selection for a machine learning model based on the dataset?
-Can you identify any potential biases or limitations in the dataset, and how would you address them?
