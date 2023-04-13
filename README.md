@@ -23,9 +23,9 @@ Where $g$ is the link function and $E(Y)$ is the expected value of the response 
 ## :apple: 1.2 Gradient Boosted Machines (GBMs)
 
 Gradient Boosted Machines (GBMs) are an ensemble learning method that combines the predictions of multiple weak learners (typically decision trees) to improve predictive accuracy. GBMs iteratively build decision trees to minimize a given loss function using the gradient descent algorithm. The key idea is to add a new tree at each iteration to correct the residual errors of the previous tree.
-1. An optimized loss function
-2. A lousy indicator learner
-3. An additive model that reduces failure cases.
+1. An optimized loss function: has to be differentiable; Regression: squared error; Classification: logarithmic loss.
+3. A weak learner: decision trees; trees are designed greedily, selecting the best split points based on purity scores like Gini
+4. An additive model that reduces failure cases. Update the value by adding a new tree to reduce the residual loss.
 
 The output of a GBM can be expressed as:
 
