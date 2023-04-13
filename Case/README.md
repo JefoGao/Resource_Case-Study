@@ -131,6 +131,20 @@ With this dataset, we can start analyzing the data to gain insights into patient
 7. `GBM for patient-reported outcomes prediction`: Use GBMs to predict patient-reported outcomes, taking into account factors such as demographics, medical history, and treatment plans. This can help healthcare organizations better understand patient satisfaction and overall patient experience, informing improvements in care delivery.
 8. `Interpretation and insights`: Interpret the results of the GLM and GBM analyses to gain insights into patient care, clinical outcomes, healthcare delivery, and informed decision-making. Use these insights to inform decision-making and improve overall health care organization performance.
 
+# FMGC/CPG Case
+
+|Product ID|Category|Brand|Price|Promotion|sales volume|store location|inventory levels|shelf space|cust demo(age,sex,income)|purchase frequency and spend per customer|
+|--|--|--|--|--|--|--|--|--|--|--|
+|str|class|class|float|%|int|class|class|class|mix|class|mix|
+
+1. `Analyze category, brand, and product performance`: Use GLMs to analyze the relationship between sales volume and factors like category, brand, price, and promotion. This will help identify the main drivers of product performance and detect trends or patterns in sales.
+2. `Analyze promotional performance`: Apply GLMs to evaluate the effectiveness of promotions on sales volume, accounting for factors like product category, brand, and customer demographics. This can help inform future promotional strategies for maximum profitability.
+3. `Optimize range and space decisions`: Use GLMs to analyze the relationship between sales volume, shelf space, and inventory levels. This can inform better range and space decisions for retailers and suppliers.
+4. `Identify high-priority shoppers`: Apply GBMs to predict customer lifetime value or propensity to purchase specific products based on their demographics and purchase behavior. This can help identify high-priority customers and drive targeted marketing, promotions, and pricing strategies.
+5. `Improve revenue efficiency within the supply chain`: Use GBMs to predict demand based on factors like historical sales, promotions, and external factors (e.g., seasonality, holidays). These predictions can help optimize inventory management and reduce waste, improving revenue efficiency within the supply chain.
+
+In summary, GLMs can be used for inferential tasks, such as understanding the relationships between variables and analyzing product, brand, category, and promotional performance. GBMs can be employed for predictive tasks, like identifying high-priority customers and optimizing inventory management. Combining these techniques will provide valuable insights to help drive better decision-making in the FMCG/CPG industry.
+
 # Supermarket Customer Transaction History Case Study
 
 ## Background:
