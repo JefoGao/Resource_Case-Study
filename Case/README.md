@@ -57,6 +57,13 @@ Both GLMs and GBMs have their strengths and weaknesses, and the choice between t
 |Random Forest|Both|$\color{yellow}Moderate$|$\color{yellow}Moderate$|$\color{magenta}Low$|$\color{yellow}Medium$|$\color{magenta}Lower$|
 |Boosted Trees|Both|$\color{magenta}Slow$|$\color{green}Fast$|$\color{magenta}Low$|$\color{green}High$|$\color{magenta}Lower$|
 
+# Retail Case
+
+|CustomerID|Age|Gender|Location|Membership/loyalty|Date of transaction|Time of transaction|Items puchased(product ID)|Item quantity|Item price|Total transaction amount|Promotion applied|Payment method|
+|--|--|--|--|--|--|--|--|--|--|--|--|--|
+|str|int|bin|str|bool|date|time|str|int|float|float|bool|class|
+
+
 # Supermarket Customer Transaction History Case Study
 
 ## Background:
