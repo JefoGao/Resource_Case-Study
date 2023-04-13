@@ -239,3 +239,8 @@ Interpreting the results is a crucial step in the data analysis process. Here ar
 |![image](https://user-images.githubusercontent.com/19381768/231360883-4493bdde-d9da-4bf3-8b7e-2cf4eff5f7f8.png)|
 |Selection Bias|
 
+# 6 Interview Questions
+1. Could you tell me more about the specific tools and technologies that Quantium uses to generate data-driven insights?
+2. Can you explain more about the types of statistical analyses that are commonly used in projects like this one?
+3. What type of output or recommendations can I expect to provide to the client based on the findings of this project?
+4. How are the Generalized Linear Models and Gradient Boosted Machines typically used to address the types of problems that the supermarket is facing?
