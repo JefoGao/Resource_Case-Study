@@ -11,6 +11,9 @@
 
 Note: This table provides an overview of different GLM families and their characteristics. The choice of GLM family and link function depends on the specific problem, data distribution, and desired model properties.
 
+Overdispersed data refers to a situation where the variance of the data is greater than what is expected under the model assumptions. In other words, the observed variability in the data is greater than what can be accounted for by the mean structure of the model. This can be an issue in statistical analysis because it violates the assumption of constant variance, which is often assumed in many models.
+
+In GLMs, the dispersion parameter $\phi$ is used to model overdispersed data. The dispersion function $1/a(\phi)$ is used to adjust the variance of the data and incorporate the overdispersion into the model. The function $a(\cdot)$ is known as the variance function and represents the relationship between the mean and variance of the data. The dispersion function is used to weight the model's contribution to the overall likelihood function to account for the overdispersion. The larger the value of $\phi$, the greater the degree of overdispersion and the more weight that is placed on the dispersion function. The goal is to find the value of $\phi$ that minimizes the difference between the observed and expected variances.
 
 ## GLMs vs GBMs
 **Generalized Linear Models (GLMs)** and **Gradient Boosted Machines (GBMs)** are two different types of machine learning algorithms used for regression and classification tasks. Here are some key differences between them:
