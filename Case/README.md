@@ -132,3 +132,5 @@ Based on the analysis and modeling performed in the previous tasks, we can draw 
 4. The predictive and forecasting models can provide valuable insights into future sales trends, customer segmentation, and churn prediction, which can be used to inform decision-making and optimize marketing, promotions, and inventory management efforts.
 
 Overall, the data analysis and modeling conducted in this case study have provided valuable insights into the supermarket's transaction history and customer behavior. These insights can be used to inform business strategies aimed at improving customer retention, identifying trends, and increasing profits.
+
+# Extracurricular
