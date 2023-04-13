@@ -63,15 +63,33 @@ Both GLMs and GBMs have their strengths and weaknesses, and the choice between t
 |--|--|--|--|--|--|--|--|--|--|--|--|--|
 |str|int|bin|str|bool|date|time|str|int|float|float|bool|class|
 
+With this dataset, we can start analyzing the data to gain insights into customer behaviors, marketing strategies, price investments, and inventory management.
+
 1. `Data preprocessing`: Clean and preprocess the data, handling missing values, and converting categorical variables into numerical formats (e.g., one-hot encoding for gender and location).
 2. `Feature engineering`: Create new features such as average transaction amount per customer, total items purchased per customer, frequency of transactions, time since the last transaction, and response to promotions.
-3. `Exploratory Data Analysis (EDA)`:Perform EDA to understand the distribution of variables, identify potential correlations, and detect any outliers.
+3. `Exploratory Data Analysis (EDA)`: Perform EDA to understand the distribution of variables, identify potential correlations, and detect any outliers.
 4. `GLM for customer segmentation`: Apply Generalized Linear Models (GLMs) to segment customers based on their behaviors, such as frequency of purchases, total spending, and responsiveness to promotions. This can help identify high-value customers and target marketing efforts more effectively.
 5. `GLM for price investment strategies`: Use GLMs to analyze the relationship between price and sales, considering factors such as product type, promotion, and customer demographics. This can help identify optimal pricing strategies and identify areas for price investments.
 6. `GBM for forecasting`: Apply Gradient Boosted Machines (GBMs) to forecast sales and inventory levels, taking into account seasonality, trends, and other factors such as promotions and price changes. This can help improve inventory management and reduce waste.
 7. `GBM for promotion effectiveness`: Use GBMs to predict the effectiveness of different promotions on customer segments, taking into account factors such as customer demographics, past purchasing behavior, and product preferences. This can help optimize marketing efforts and allocate resources more efficiently.
 8. `Interpretation and insights`: Interpret the results of the GLM and GBM analyses to gain insights into customer behaviors, pricing strategies, inventory management, and promotion effectiveness. Use these insights to inform decision-making and improve overall supermarket performance.
 
+# Insurance Case
+
+|CustomerID|Age|Gender|Location|Number of dependents|Policy type|Policy start date|Policy end date|Premium amount|Payment frequency|Coverage amount|Claim history(# claims, claim amount)|Risk factors(eg, health conditions, driving records)|
+|--|--|--|--|--|--|--|--|--|--|--|--|--|
+|str|int|bin|str|int|class|date|date|float|class|float|mix|class|
+
+With this dataset, we can start analyzing the data to gain insights into insurance product development, pricing, marketing, risk assessment, claims management, and customer experience.
+
+1. `Data preprocessing`: Clean and preprocess the data, handling missing values, and converting categorical variables into numerical formats (e.g., one-hot encoding for gender, location, occupation, and marital status). (If the missing value is less than 5% then we can avoid and remove the data. If more than 5%, perform LM for continuous variable or logistic regression for categorical variable)
+2. `Feature engineering`: Create new features such as policy duration, total premium paid, claims frequency, average claim amount, and customer lifetime value.
+3. `Exploratory Data Analysis (EDA)`: Perform EDA to understand the distribution of variables, identify potential correlations, and detect any outliers.
+4. `GLM for pricing and risk assessment`: Apply Generalized Linear Models (GLMs) to analyze the relationship between premiums, coverage amounts, risk factors, and claims history. This can help identify trends and patterns in pricing and risk assessment, enabling better pricing decisions and risk management.
+5. `GLM for customer segmentation`: Use GLMs to segment customers based on their risk profiles and purchasing behavior, such as policy type, premium amount, and claims history. This can help develop targeted marketing campaigns and personalized insurance products. (split data into train and test datasets, model is built on the training dataset and it is validated on the test dataset, conduct confusion matrix)
+6. `GBM for claims prediction`: Apply Gradient Boosted Machines (GBMs) to predict the likelihood of future claims based on customer demographics, risk factors, and policy details. This can help improve claims management and allocate resources more efficiently.
+7. `GBM for customer retention`: Use GBMs to predict the likelihood of policy renewal or customer churn, taking into account factors such as customer demographics, policy details, and past interactions with the company. This can help identify customers at risk of churning and enable proactive retention strategies.
+8. `Interpretation and insights`: Interpret the results of the GLM and GBM analyses to gain insights into insurance product development, pricing, marketing, risk assessment, claims management, and customer experience. Use these insights to inform decision-making and improve overall insurance company performance.
 
 # Supermarket Customer Transaction History Case Study
 
