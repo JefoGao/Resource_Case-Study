@@ -134,6 +134,19 @@ Based on the analysis and modeling performed in the previous tasks, we can draw 
 Overall, the data analysis and modeling conducted in this case study have provided valuable insights into the supermarket's transaction history and customer behavior. These insights can be used to inform business strategies aimed at improving customer retention, identifying trends, and increasing profits.
 
 # Extracurricular
+## GLMs
+
+| GLM Family        | Link Function            | Suitable Use Case              | When Not to Use                     | Pros and Cons                                                                                                       |
+|-------------------|--------------------------|--------------------------------|-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
+| Binomial          | Logit                    | Classification                 | Non-binary outcomes, continuous data | Pros: Well-suited for binary outcomes. <br> Cons: Limited to binary response variables, may not fit non-linear relationships well.       |
+| Gaussian          | Identity                 | Regression                     | Non-normal data, count data         | Pros: Simple and interpretable, fast to fit. <br> Cons: Assumes normal errors, may not fit non-linear relationships well.              |
+| Poisson           | Log                      | Count data regression          | Overdispersed data, continuous data | Pros: Suitable for count data, non-negative predictions. <br> Cons: Assumes equal mean and variance, may not handle overdispersion well. |
+| Gamma             | Inverse, Log, or Identity | Continuous, positive data      | Negative or zero values             | Pros: Flexible for positive continuous data, can handle skewed data. <br> Cons: Cannot predict zero or negative values.                 |
+| Inverse Gaussian  | Inverse squared          | Continuous, positive data      | Negative or zero values             | Pros: Can model long-tailed and skewed data. <br> Cons: Cannot predict zero or negative values, less interpretable than Gaussian.        |
+
+Note: This table provides an overview of different GLM families and their characteristics. The choice of GLM family and link function depends on the specific problem, data distribution, and desired model properties.
+
+
 ## GLMs vs GBMs
 **Generalized Linear Models (GLMs)** and **Gradient Boosted Machines (GBMs)** are two different types of machine learning algorithms used for regression and classification tasks. Here are some key differences between them:
 
