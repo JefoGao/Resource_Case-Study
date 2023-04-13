@@ -1,3 +1,9 @@
+Generalized Linear Models (GLMs) are often used for inferential purposes, as they can help understand the relationship between independent and dependent variables, identify trends and patterns, and evaluate the significance of specific features. GLMs can also be used for prediction but may not always be the best choice, especially when dealing with complex relationships or non-linear patterns.
+
+Gradient Boosted Machines (GBMs), on the other hand, are primarily used for prediction tasks due to their ability to handle complex relationships and non-linear patterns in the data. GBMs are powerful and flexible algorithms that can improve predictive accuracy by combining multiple weak models into a single strong model. They may not provide as much interpretability as GLMs, but their focus is on generating accurate predictions rather than understanding the underlying relationships between variables.
+
+In summary, while GLMs are often more suitable for inference tasks and GBMs for prediction tasks, both methods can be used for different purposes depending on the specific problem and dataset at hand.
+
 # Summary
 ## GLMs
 
