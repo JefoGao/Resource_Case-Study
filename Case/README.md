@@ -93,9 +93,26 @@ With this dataset, we can start analyzing the data to gain insights into insuran
 
 # Banking and wealth Case
 
-|CustomerID|Age|Gender|Location|Occupation|Marital status|# dependency|acc type|acc balance|loan amount|loan duration|interest rate|monthly repayment|credit score|# products(savings, investments, etc)|channel usage(branch,digital,etc)|transaction history|
+|CustomerID|Age|Gender|Location|Occupation|Marital status|# dependents|acc type|acc balance|loan amount|loan duration|interest rate|monthly repayment|credit score|# products(savings, investments, etc)|channel usage(branch,digital,etc)|transaction history|
 |--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
 |str|int|bin|str|class|class|int|class|float|float|time|%|float|int|int|class|mix|
+
+With this dataset, we can start analyzing the data to gain insights into pricing, credit risk, channel utilization, marketing, risk assessment, and customer experience.
+
+1. `Data preprocessing`: Clean and preprocess the data, handling missing values, and converting categorical variables into numerical formats (e.g., one-hot encoding for gender, location, occupation, and marital status).
+2. `Feature engineering`: Create new features such as loan-to-value ratio, debt-to-income ratio, and customer lifetime value.
+3. `Exploratory Data Analysis (EDA)`: Perform EDA to understand the distribution of variables, identify potential correlations, and detect any outliers.
+4. `GLM for pricing and credit risk assessment`: Apply Generalized Linear Models (GLMs) to analyze the relationship between interest rates, loan amounts, loan duration, credit scores, and account balances. This can help identify trends and patterns in pricing and credit risk assessment, enabling better lending decisions and risk management.
+5. `GLM for customer segmentation`: Use GLMs to segment customers based on their financial profiles, such as account balances, credit scores, and product usage. This can help develop targeted marketing campaigns and personalized banking products.
+6. `GBM for loan default prediction`: Apply Gradient Boosted Machines (GBMs) to predict the likelihood of loan default based on customer demographics, financial profiles, and loan details. This can help improve risk assessment and allocate resources more efficiently.
+7. `GBM for channel utilization and customer retention`: Use GBMs to predict the likelihood of customers using different channels (branch, digital, etc.) and the probability of customer attrition, taking into account factors such as demographics, account details, and past interactions with the bank. This can help optimize channel utilization and enable proactive retention strategies.
+8. `Interpretation and insights`: Interpret the results of the GLM and GBM analyses to gain insights into pricing, credit risk, channel utilization, marketing, risk assessment, and customer experience. Use these insights to inform decision-making and improve overall banking and wealth management company performance.
+
+# Banking and wealth Case
+
+|Patient ID|Age|Gender|Location|Marital status|# dependents|medical history|current medications|allergies|prev hospitalizations|primary care provider|diagnosis|treatment plan|clinical outcomes|patient-reported outcomes|cost of care|insurance coverage|
+|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
+|str|int|bin|class|class|int|str|class|class|str|class|str|str|class|class|float|bool|
 
 With this dataset, we can start analyzing the data to gain insights into pricing, credit risk, channel utilization, marketing, risk assessment, and customer experience.
 
