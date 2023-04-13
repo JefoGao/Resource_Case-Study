@@ -1,3 +1,42 @@
+# Summary
+## GLMs
+
+| GLM Family        | Link Function            | Suitable Use Case              | When Not to Use                     | Pros and Cons                                                                                                       |
+|-------------------|--------------------------|--------------------------------|-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
+| Binomial          | Logit                    | Classification                 | Non-binary outcomes, continuous data | Pros: Well-suited for binary outcomes. <br> Cons: Limited to binary response variables, may not fit non-linear relationships well.       |
+| Gaussian          | Identity                 | Regression                     | Non-normal data, count data         | Pros: Simple and interpretable, fast to fit. <br> Cons: Assumes normal errors, may not fit non-linear relationships well.              |
+| Poisson           | Log                      | Count data regression          | Overdispersed data, continuous data | Pros: Suitable for count data, non-negative predictions. <br> Cons: Assumes equal mean and variance, may not handle overdispersion well. |
+| Gamma             | Inverse, Log, or Identity | Continuous, positive data      | Negative or zero values             | Pros: Flexible for positive continuous data, can handle skewed data. <br> Cons: Cannot predict zero or negative values.                 |
+| Inverse Gaussian  | Inverse squared          | Continuous, positive data      | Negative or zero values             | Pros: Can model long-tailed and skewed data. <br> Cons: Cannot predict zero or negative values, less interpretable than Gaussian.        |
+
+Note: This table provides an overview of different GLM families and their characteristics. The choice of GLM family and link function depends on the specific problem, data distribution, and desired model properties.
+
+
+## GLMs vs GBMs
+**Generalized Linear Models (GLMs)** and **Gradient Boosted Machines (GBMs)** are two different types of machine learning algorithms used for regression and classification tasks. Here are some key differences between them:
+
+1. **Model foundation:**
+   - GLMs are a generalization of linear regression models, allowing the response variable to follow any distribution from the exponential family (e.g., Gaussian, Poisson, or binomial) instead of being limited to normally distributed errors. GLMs use a link function to connect the linear predictor and the response variable.
+   - GBMs, on the other hand, are an ensemble method that builds a strong learner by combining multiple weak learners, typically decision trees. GBMs minimize the loss function by iteratively adding new weak learners to the ensemble, which are fit to the negative gradient of the loss function.
+
+2. **Flexibility:**
+   - GLMs are less flexible than GBMs, as they make assumptions about the response variable distribution and the linearity of the relationship between the predictors and the response variable.
+   - GBMs can automatically capture non-linear relationships and complex interactions between features, making them more flexible and capable of fitting a wide range of data patterns.
+
+3. **Interpretability:**
+   - GLMs are generally more interpretable, as the coefficients for each predictor variable can be directly interpreted in terms of their effect on the response variable (after taking into account the link function).
+   - GBMs, being an ensemble of decision trees, are less interpretable, as it is challenging to derive an intuitive understanding of the model's predictions from the combined effects of multiple trees.
+
+4. **Regularization:**
+   - Regularization techniques such as Lasso, Ridge, or Elastic Net can be applied to GLMs to prevent overfitting and improve model generalization.
+   - GBMs inherently include a form of regularization through the use of weak learners and gradient descent optimization. Additional regularization can be applied by controlling the depth of the trees, the learning rate, and the number of trees in the ensemble.
+
+5. **Performance:**
+   - In general, GBMs tend to perform better than GLMs on complex datasets with non-linear relationships and interactions between features. However, they can be more prone to overfitting if not properly tuned.
+   - GLMs may perform better on simpler datasets with linear relationships or when interpretability is a priority.
+
+Both GLMs and GBMs have their strengths and weaknesses, and the choice between them depends on the specific problem, dataset characteristics, and desired model properties (e.g., interpretability, flexibility, performance).
+
 # Supermarket Customer Transaction History Case Study
 
 ## Background:
@@ -132,42 +171,3 @@ Based on the analysis and modeling performed in the previous tasks, we can draw 
 4. The predictive and forecasting models can provide valuable insights into future sales trends, customer segmentation, and churn prediction, which can be used to inform decision-making and optimize marketing, promotions, and inventory management efforts.
 
 Overall, the data analysis and modeling conducted in this case study have provided valuable insights into the supermarket's transaction history and customer behavior. These insights can be used to inform business strategies aimed at improving customer retention, identifying trends, and increasing profits.
-
-# Extracurricular
-## GLMs
-
-| GLM Family        | Link Function            | Suitable Use Case              | When Not to Use                     | Pros and Cons                                                                                                       |
-|-------------------|--------------------------|--------------------------------|-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Binomial          | Logit                    | Classification                 | Non-binary outcomes, continuous data | Pros: Well-suited for binary outcomes. <br> Cons: Limited to binary response variables, may not fit non-linear relationships well.       |
-| Gaussian          | Identity                 | Regression                     | Non-normal data, count data         | Pros: Simple and interpretable, fast to fit. <br> Cons: Assumes normal errors, may not fit non-linear relationships well.              |
-| Poisson           | Log                      | Count data regression          | Overdispersed data, continuous data | Pros: Suitable for count data, non-negative predictions. <br> Cons: Assumes equal mean and variance, may not handle overdispersion well. |
-| Gamma             | Inverse, Log, or Identity | Continuous, positive data      | Negative or zero values             | Pros: Flexible for positive continuous data, can handle skewed data. <br> Cons: Cannot predict zero or negative values.                 |
-| Inverse Gaussian  | Inverse squared          | Continuous, positive data      | Negative or zero values             | Pros: Can model long-tailed and skewed data. <br> Cons: Cannot predict zero or negative values, less interpretable than Gaussian.        |
-
-Note: This table provides an overview of different GLM families and their characteristics. The choice of GLM family and link function depends on the specific problem, data distribution, and desired model properties.
-
-
-## GLMs vs GBMs
-**Generalized Linear Models (GLMs)** and **Gradient Boosted Machines (GBMs)** are two different types of machine learning algorithms used for regression and classification tasks. Here are some key differences between them:
-
-1. **Model foundation:**
-   - GLMs are a generalization of linear regression models, allowing the response variable to follow any distribution from the exponential family (e.g., Gaussian, Poisson, or binomial) instead of being limited to normally distributed errors. GLMs use a link function to connect the linear predictor and the response variable.
-   - GBMs, on the other hand, are an ensemble method that builds a strong learner by combining multiple weak learners, typically decision trees. GBMs minimize the loss function by iteratively adding new weak learners to the ensemble, which are fit to the negative gradient of the loss function.
-
-2. **Flexibility:**
-   - GLMs are less flexible than GBMs, as they make assumptions about the response variable distribution and the linearity of the relationship between the predictors and the response variable.
-   - GBMs can automatically capture non-linear relationships and complex interactions between features, making them more flexible and capable of fitting a wide range of data patterns.
-
-3. **Interpretability:**
-   - GLMs are generally more interpretable, as the coefficients for each predictor variable can be directly interpreted in terms of their effect on the response variable (after taking into account the link function).
-   - GBMs, being an ensemble of decision trees, are less interpretable, as it is challenging to derive an intuitive understanding of the model's predictions from the combined effects of multiple trees.
-
-4. **Regularization:**
-   - Regularization techniques such as Lasso, Ridge, or Elastic Net can be applied to GLMs to prevent overfitting and improve model generalization.
-   - GBMs inherently include a form of regularization through the use of weak learners and gradient descent optimization. Additional regularization can be applied by controlling the depth of the trees, the learning rate, and the number of trees in the ensemble.
-
-5. **Performance:**
-   - In general, GBMs tend to perform better than GLMs on complex datasets with non-linear relationships and interactions between features. However, they can be more prone to overfitting if not properly tuned.
-   - GLMs may perform better on simpler datasets with linear relationships or when interpretability is a priority.
-
-Both GLMs and GBMs have their strengths and weaknesses, and the choice between them depends on the specific problem, dataset characteristics, and desired model properties (e.g., interpretability, flexibility, performance).
