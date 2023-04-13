@@ -49,6 +49,14 @@ Both GLMs and GBMs have their strengths and weaknesses, and the choice between t
 |Random Forest|- Categorical or continuous target variable<br>- Interested in significance of predictors<br>- Interested in significance of predictors<br>- Need a quick benchmark model<br>- If you have messy data, such as missing values, outliers|- If you're solving a very complex, novel problem<br>- Transparency is important<br>- Prediction time is important|- number of estimator<br>- max depth|
 |Boosting|- Categorical or continuous target variable<br>- Useful on nearly any type of problem<br>- Interested in significance of predictors<br>- Prediction time is important|- Transparency is important<br>- Training time is important or compute power is limited<br>- Data is really noisy|- number of estimator<br>- max depth<br>- learning rate|
 
+||Problem Type|Train Speed|Predict Speed|Interpretability|Performance|Performance with Limited Data|
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+|Logistic Regression|Classification|$\color{green}Fast$|$\color{green}Fast$|$\color{yellow}Medium$|$\color{magenta}Lower$|$\color{green}Higher$|
+|Support Vector Machines|Classification|$\color{magenta}Slow$|$\color{yellow}Moderate$|$\color{magenta}Low$|$\color{yellow}Medium$|$\color{green}Higher$|
+|Multilayer Perception|Both|$\color{magenta}Slow$|$\color{yellow}Moderate$|$\color{magenta}Low$|$\color{green}High$|$\color{magenta}Lower$|
+|Random Forest|Both|$\color{yellow}Moderate$|$\color{yellow}Moderate$|$\color{magenta}Low$|$\color{yellow}Medium$|$\color{magenta}Lower$|
+|Boosted Trees|Both|$\color{magenta}Slow$|$\color{green}Fast$|$\color{magenta}Low$|$\color{green}High$|$\color{magenta}Lower$|
+
 # Supermarket Customer Transaction History Case Study
 
 ## Background:
