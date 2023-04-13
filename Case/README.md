@@ -3,10 +3,10 @@
 
 | GLM Family        | Link Function            | Suitable Use Case              | When Not to Use                     | Pros and Cons                                                                                                       |
 |-------------------|--------------------------|--------------------------------|-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Binomial          | Logit                    | Classification                 | Non-binary outcomes, continuous data | Pros: Well-suited for binary outcomes. <br> Cons: Limited to binary response variables, may not fit non-linear relationships well.       |
-| Gaussian          | Identity                 | Regression                     | Non-normal data, count data         | Pros: Simple and interpretable, fast to fit. <br> Cons: Assumes normal errors, may not fit non-linear relationships well.              |
-| Poisson           | Log                      | Count data regression          | Overdispersed data, continuous data | Pros: Suitable for count data, non-negative predictions. <br> Cons: Assumes equal mean and variance, may not handle overdispersion well. |
-| Gamma             | Inverse, Log, or Identity | Continuous, positive data      | Negative or zero values             | Pros: Flexible for positive continuous data, can handle skewed data. <br> Cons: Cannot predict zero or negative values.                 |
+| Binomial          | Logit<br>Bernoulli: $\ln(\frac{\mu}{1-\mu})$<br>Binomial: $\ln(\frac{\mu}{n-\mu})$| Classification                 | Non-binary outcomes, continuous data | Pros: Well-suited for binary outcomes. <br> Cons: Limited to binary response variables, may not fit non-linear relationships well.       |
+| Gaussian          | Identity<br>$\mu$| Regression                     | Non-normal data, count data         | Pros: Simple and interpretable, fast to fit. <br> Cons: Assumes normal errors, may not fit non-linear relationships well.              |
+| Poisson           | Log<br>$\ln(\mu)$| Count data regression          | Overdispersed data, continuous data | Pros: Suitable for count data, non-negative predictions. <br> Cons: Assumes equal mean and variance, may not handle overdispersion well. |
+| Gamma             | Inverse, Log, or Identity<br>Negative inverse: $-\mu^{-1}$| Continuous, positive data      | Negative or zero values             | Pros: Flexible for positive continuous data, can handle skewed data. <br> Cons: Cannot predict zero or negative values.                 |
 | Inverse Gaussian  | Inverse squared          | Continuous, positive data      | Negative or zero values             | Pros: Can model long-tailed and skewed data. <br> Cons: Cannot predict zero or negative values, less interpretable than Gaussian.        |
 
 Note: This table provides an overview of different GLM families and their characteristics. The choice of GLM family and link function depends on the specific problem, data distribution, and desired model properties.
@@ -39,6 +39,14 @@ In GLMs, the dispersion parameter $\phi$ is used to model overdispersed data. Th
    - GLMs may perform better on simpler datasets with linear relationships or when interpretability is a priority.
 
 Both GLMs and GBMs have their strengths and weaknesses, and the choice between them depends on the specific problem, dataset characteristics, and desired model properties (e.g., interpretability, flexibility, performance).
+
+## Different ML Algorithms
+|Algorithm|Use Case|When Not to Use|Key Hyperparameter|
+|--|--|--|--|
+|Logistic Regression|- Binary target varible<br>- Transparency is important or interested in significance of predictors<br>- Fairly well-behaved data<br>- Need a quick initial benchmark|- Continuous target variable<br>- Massive data (rows or columns)<br>- Unwieldy data<br>- Performance is the only thing that matters|- C: regularization parameter to reduce overfitting<br>- $C=\frac{1}{\lambda}$<br>- Large C: low regularization, high complexity, more likely to overfit|
+|SVM|- Binary target variable<br>- Feature-to-row ratio is very high<br>- Very complex relationships<br>- Lots of outliers|- Feature-to-row ratio is very low<br>- Transparency is important or interested in significance of predictors<br>- Looking for a quick benchmark model (SVM takes long time to train)|- C: regularization parameter<br>- kernel trick transformation: transforms data that is not linearly separable in n-dimensional space to a higher dimension where it is linearly separable|
+|Multi-layer Perceptron|- Categorical or continuous target variable<br>- Very complex relationships or performance is the only thing that matters<br>- When control over the training process is very important|- Image recognition, time series, etc<br>- Transparency is important or interested in significance of predictors<br>- Need a quick benchmark model<br>- Limited data available|- activation: `ReLU`rectified linear unit,`Sigmoid`,`TanH`<br>- hidden layer sizes<br>- learning rate|
+|Random Forest|- Categorical or continuous target variable<br>- Interested in significance of predictors<br>- Interested in significance of predictors<br>- Need a quick benchmark model<br>- If you have messy data, such as missing values, outliers|- If you're solving a very complex, novel problem<br>- Transparency is important<br>- Prediction time is important||
 
 # Supermarket Customer Transaction History Case Study
 
