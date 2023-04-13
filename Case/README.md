@@ -91,6 +91,24 @@ With this dataset, we can start analyzing the data to gain insights into insuran
 7. `GBM for customer retention`: Use GBMs to predict the likelihood of policy renewal or customer churn, taking into account factors such as customer demographics, policy details, and past interactions with the company. This can help identify customers at risk of churning and enable proactive retention strategies.
 8. `Interpretation and insights`: Interpret the results of the GLM and GBM analyses to gain insights into insurance product development, pricing, marketing, risk assessment, claims management, and customer experience. Use these insights to inform decision-making and improve overall insurance company performance.
 
+# Banking and wealth Case
+
+|CustomerID|Age|Gender|Location|Occupation|Marital status|# dependency|acc type|acc balance|loan amount|loan duration|interest rate|monthly repayment|credit score|# products(savings, investments, etc)|channel usage(branch,digital,etc)|transaction history|
+|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
+|str|int|bin|str|class|class|int|class|float|float|time|%|float|int|int|class|mix|
+
+With this dataset, we can start analyzing the data to gain insights into insurance product development, pricing, marketing, risk assessment, claims management, and customer experience.
+
+1. `Data preprocessing`: Clean and preprocess the data, handling missing values, and converting categorical variables into numerical formats (e.g., one-hot encoding for gender, location, occupation, and marital status). (If the missing value is less than 5% then we can avoid and remove the data. If more than 5%, perform LM for continuous variable or logistic regression for categorical variable)
+2. `Feature engineering`: Create new features such as policy duration, total premium paid, claims frequency, average claim amount, and customer lifetime value.
+3. `Exploratory Data Analysis (EDA)`: Perform EDA to understand the distribution of variables, identify potential correlations, and detect any outliers.
+4. `GLM for pricing and risk assessment`: Apply Generalized Linear Models (GLMs) to analyze the relationship between premiums, coverage amounts, risk factors, and claims history. This can help identify trends and patterns in pricing and risk assessment, enabling better pricing decisions and risk management.
+5. `GLM for customer segmentation`: Use GLMs to segment customers based on their risk profiles and purchasing behavior, such as policy type, premium amount, and claims history. This can help develop targeted marketing campaigns and personalized insurance products. (split data into train and test datasets, model is built on the training dataset and it is validated on the test dataset, conduct confusion matrix)
+6. `GBM for claims prediction`: Apply Gradient Boosted Machines (GBMs) to predict the likelihood of future claims based on customer demographics, risk factors, and policy details. This can help improve claims management and allocate resources more efficiently.
+7. `GBM for customer retention`: Use GBMs to predict the likelihood of policy renewal or customer churn, taking into account factors such as customer demographics, policy details, and past interactions with the company. This can help identify customers at risk of churning and enable proactive retention strategies.
+8. `Interpretation and insights`: Interpret the results of the GLM and GBM analyses to gain insights into insurance product development, pricing, marketing, risk assessment, claims management, and customer experience. Use these insights to inform decision-making and improve overall insurance company performance.
+
+
 # Supermarket Customer Transaction History Case Study
 
 ## Background:
