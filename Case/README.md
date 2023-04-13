@@ -63,6 +63,15 @@ Both GLMs and GBMs have their strengths and weaknesses, and the choice between t
 |--|--|--|--|--|--|--|--|--|--|--|--|--|
 |str|int|bin|str|bool|date|time|str|int|float|float|bool|class|
 
+1. `Data preprocessing`: Clean and preprocess the data, handling missing values, and converting categorical variables into numerical formats (e.g., one-hot encoding for gender and location).
+2. `Feature engineering`: Create new features such as average transaction amount per customer, total items purchased per customer, frequency of transactions, time since the last transaction, and response to promotions.
+3. `Exploratory Data Analysis (EDA)`:Perform EDA to understand the distribution of variables, identify potential correlations, and detect any outliers.
+4. `GLM for customer segmentation`: Apply Generalized Linear Models (GLMs) to segment customers based on their behaviors, such as frequency of purchases, total spending, and responsiveness to promotions. This can help identify high-value customers and target marketing efforts more effectively.
+5. `GLM for price investment strategies`: Use GLMs to analyze the relationship between price and sales, considering factors such as product type, promotion, and customer demographics. This can help identify optimal pricing strategies and identify areas for price investments.
+6. `GBM for forecasting`: Apply Gradient Boosted Machines (GBMs) to forecast sales and inventory levels, taking into account seasonality, trends, and other factors such as promotions and price changes. This can help improve inventory management and reduce waste.
+7. `GBM for promotion effectiveness`: Use GBMs to predict the effectiveness of different promotions on customer segments, taking into account factors such as customer demographics, past purchasing behavior, and product preferences. This can help optimize marketing efforts and allocate resources more efficiently.
+8. `Interpretation and insights`: Interpret the results of the GLM and GBM analyses to gain insights into customer behaviors, pricing strategies, inventory management, and promotion effectiveness. Use these insights to inform decision-making and improve overall supermarket performance.
+
 
 # Supermarket Customer Transaction History Case Study
 
