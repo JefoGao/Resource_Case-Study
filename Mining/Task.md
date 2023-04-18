@@ -17,6 +17,15 @@ The data represents results from a fictional processing plant and some basic def
   - For example: $\frac{20000}{25000}\times 100% = 80%$ Au Recovery, where 20000 is 20000g Au in concertate, 25000 is 25000g Au in plant feed.
   - For example: $\frac{13%\times 250}{0.1%\times 40000}× 100% = 81.25%$ Cu Recovery, where numerator is 13% Cu times 250t concentrate, denominator is 0.1% Cu times 40000t plant feed.
 
+## Figure 1
+
+```mermaid
+graph LR
+A[Ore Stockpile plant feed - Head Grade] --> B{Processing Plant}
+  B --> C[Concentrate Product - Concentrate Grade]
+  B --> D[Plant Tail - Tail Grade]
+```
+
 ## Task
 
 One of the core requirements of our data science team, is to be able to draw insights from data and data analysis. With this in mind, have a play with the data and draw an insight. To support this insight, 1-2 graphics should be provided to show to the interviewing team.
